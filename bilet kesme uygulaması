@@ -1,0 +1,204 @@
+from datetime import datetime as dt # 
+
+print("Kılıçkaya Turizm'e Hoşgeldiniz.") 
+sehir = "İstanbul (34)","Trabzon (61) ", "Isparta (32) ", "Mersin (33)" #Plakaların Tanımı
+plaka = ("34, 61, 32, 33")
+print("")
+
+print("1.Bilet Almak") 
+print ("2.Rezervasyon")
+print("3.Bilet  İptal Etmek")
+
+
+islem=int(input("Lütfen Yapmak İstediğiniz İşlemin Numarasını Giriniz: ")) 
+
+if islem == 1: 
+        print(sehir)
+        print("Seferlerimiz Bunlardan Oluşmaktadır.")
+        
+        plaka = int(input("Lütfen Gitmek İstediğiniz Şehrin Plakasını Yazınız: "))
+
+        if  plaka == 34:
+            print("İstanbul Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 1000")
+            print("Çiftli Koltuk Fiyatı: 500")
+        
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 1000 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 500 Tl'dir")
+
+        elif plaka == 61:
+            print("Trabzon Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 500")
+            print("Çiftli Koltuk Fiyatı: 250")
+        
+        
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 500 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+
+        elif plaka == 32:
+            print("Isparta Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 250")
+            print("Çiftli Koltuk Fiyatı: 125")
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+             isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+             no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+             print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 125 Tl'dir")
+
+        elif plaka == 33:
+            print("Isparta Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 250")
+            print("Çiftli Koltuk Fiyatı: 125")
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 125 Tl'dir")
+
+elif islem == 2:
+
+        print(sehir)
+        print("Seferlerimiz Bunlardan Oluşmaktadır.")
+        
+        plaka = int(input("Lütfen Gitmek İstediğiniz Şehrin Plakasını Yazınız: "))
+
+        if  plaka == 34:
+            tarih_string = str(input('Lütfen Gitmek İstediğiniz Tarihi Seçiniz: (yyyy-aa-gg): '))
+            tarih = dt.strptime(tarih_string, "%Y-%m-%d")
+
+            print("İstanbul Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 1000")
+            print("Çiftli Koltuk Fiyatı: 500")
+        
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 1000 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 500 Tl'dir")
+
+        elif plaka == 61:
+
+            tarih_string = str(input('Lütfen Gitmek İstediğiniz Tarihi Seçiniz: (yyyy-aa-gg): '))
+            tarih = dt.strptime(tarih_string, "%Y-%m-%d")
+
+            print("Trabzon Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 500")
+            print("Çiftli Koltuk Fiyatı: 250")
+        
+        
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 500 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+
+        elif plaka == 32:
+
+            tarih_string = str(input('Lütfen Gitmek İstediğiniz Tarihi Seçiniz: (yyyy-aa-gg): '))
+            tarih = dt.strptime(tarih_string, "%Y-%m-%d")
+
+            print("Isparta Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 250")
+            print("Çiftli Koltuk Fiyatı: 125")
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+             isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+             no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+             print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 125 Tl'dir")
+
+        elif plaka == 33:
+
+            tarih_string = str(input('Lütfen Gitmek İstediğiniz Tarihi Seçiniz: (yyyy-aa-gg): '))
+            tarih = dt.strptime(tarih_string, "%Y-%m-%d")
+
+            print("Isparta Bilet Fiyatlarına Bakabilirsiniz.")
+            print("Tekli Koltuk Fiyatları: 250")
+            print("Çiftli Koltuk Fiyatı: 125")
+
+            secim = int(input(("Tekli Koltuk için 1\nÇiftli Koltuk İçin 2'yi Seçiniz.")))
+
+            if secim == 1 :
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 250 Tl'dir")
+
+            elif secim == 2:
+                isim = str(input("Lütfen İsim ve Soyisim Giriniz: "))
+                no = int(input("Lütfen Telefon Numranızı Giriniz: "))
+                print("Sayın "+isim+" Ücretiniz 125 Tl'dir")
+
+elif islem == 3:
+    iptal = int(input("Lütfen İptal Etmek İstediğiniz Biletin Şehir Plakasını Yazınız. "))
+
+    if iptal == 34:
+        isim = str(input("Lütfen İsim Soyisim Yazınız."))
+        print("Bilet İptal Edilmiştir Sayın " + isim)
+
+    elif iptal == 32:
+        isim = str(input("Lütfen İsim Soyisim Yazınız."))
+        print("Bilet İptal Edilmiştir Sayın " + isim)
+
+    elif iptal == 33:
+        isim = str(input("Lütfen İsim Soyisim Yazınız."))
+        print("Bilet İptal Edilmiştir Sayın " + isim)
+
+    elif iptal == 61:
+        isim = str(input("Lütfen İsim Soyisim Yazınız."))
+        print("Bilet İptal Edilmiştir Sayın " + isim)
